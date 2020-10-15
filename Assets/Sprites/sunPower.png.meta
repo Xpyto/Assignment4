@@ -1,0 +1,295 @@
+fileFormatVersion: 2
+guid: 6bead9505a109aa4f90485c5647fbf59
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1589887480498645964
+    second: sunPower_0
+  - first:
+      213: 2126519142668827751
+    second: sunPower_1
+  - first:
+      213: -6450670763890428249
+    second: sunPower_2
+  - first:
+      213: 1350457622586693872
+    second: sunPower_3
+  - first:
+      213: -4393530362085374482
+    second: sunPower_4
+  - first:
+      213: 6200939218652419808
+    second: sunPower_5
+  - first:
+      213: -798804789183774428
+    second: sunPower_6
+  - first:
+      213: 6626639509319644172
+    second: sunPower_7
+  - first:
+      213: 4429177329680169640
+    second: sunPower_8
+  - first:
+      213: 948581953945113570
+    second: sunPower_9
+  - first:
+      213: -436513312745537813
+    second: sunPower_10
+  - first:
+      213: 6609180478168372177
+    second: sunPower_11
+  - first:
+      213: -6705811690134122888
+    second: sunPower_12
+  - first:
+      213: -2902071753239923112
+    second: sunPower_13
+  - first:
+      213: -524813391000248364
+    second: sunPower_14
+  - first:
+      213: -4097526497326255539
+    second: sunPower_15
+  - first:
+      213: -3171523364445817170
+    second: sunPower_16
+  - first:
+      213: 6794214443941742155
+    second: sunPower_17
+  - first:
+      213: 8700629194530965406
+    second: sunPower_18
+  - first:
+      213: -805864523268174131
+    second: sunPower_19
+  - first:
+      213: 4387057370252985498
+    second: sunPower_20
+  - first:
+      213: -6653181185723946230
+    second: sunPower_21
+  - first:
+      213: 4450856731446105628
+    second: sunPower_22
+  - first:
+      213: 5788946563815089510
+    second: sunPower_23
+  - first:
+      213: 2444107044224276570
+    second: sunPower_24
+  - first:
+      213: 39252461662898997
+    second: sunPower_25
+  - first:
+      213: -3366463384690785710
+    second: sunPower_26
+  - first:
+      213: -8895258297825681365
+    second: sunPower_27
+  - first:
+      213: -7064019624105598437
+    second: sunPower_28
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sunPower_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434990492c59fe9e0800000000000000
+      internalID: -1589887480498645964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunPower_1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76cf7dab4e9e28d10800000000000000
+      internalID: 2126519142668827751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunPower_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6305b0e1d9a76a0800000000000000
+      internalID: -6450670763890428249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunPower_3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f89f7e7d0acdb210800000000000000
+      internalID: 1350457622586693872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunPower_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee50202e96b0703c0800000000000000
+      internalID: -4393530362085374482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
