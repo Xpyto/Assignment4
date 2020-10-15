@@ -49,12 +49,12 @@ public class LevelGenerator : MonoBehaviour
         GenerateLeveldown();
         
         
-        Instantiate(sprites[7],new Vector3(13,0,0),Quaternion.identity);
-        GameObject temp1 =  Instantiate(sprites[7],new Vector3(14,0,0),Quaternion.identity) as GameObject; 
+        Instantiate(sprites[7],new Vector3(13,0,0),Quaternion.identity,transform);
+        GameObject temp1 =  Instantiate(sprites[7],new Vector3(14,0,0),Quaternion.identity,transform) as GameObject; 
         temp1.transform.localScale = new Vector3(-1,1,1);
-        GameObject temp2 =  Instantiate(sprites[7],new Vector3(13,-28,0),Quaternion.identity) as GameObject; 
+        GameObject temp2 =  Instantiate(sprites[7],new Vector3(13,-28,0),Quaternion.identity,transform) as GameObject; 
         temp2.transform.localScale = new Vector3(-1,-1,1);
-        GameObject temp3 =  Instantiate(sprites[7],new Vector3(14,-28,0),Quaternion.identity) as GameObject; 
+        GameObject temp3 =  Instantiate(sprites[7],new Vector3(14,-28,0),Quaternion.identity,transform) as GameObject; 
         temp3.transform.localScale = new Vector3(1,-1,1);         
         GenerateSprite(3,13,-4,90);
         GenerateSprite(3,14,-4,180); 
@@ -83,7 +83,8 @@ public class LevelGenerator : MonoBehaviour
     }
 
     void GenerateSprite(int num,int i, int j,int rot){
-        Instantiate(sprites[num], new Vector3(i,j,0),Quaternion.Euler(0,0,rot));
+        Instantiate(sprites[num], new Vector3(i,j,0),Quaternion.Euler(0,0,rot), gameObject.transform);
+        
     }
 
     void GenerateLevelup(){
@@ -98,18 +99,18 @@ public class LevelGenerator : MonoBehaviour
                 if((i==0 && j==0)||(i==22&&j==-9)){
                     GenerateSprite(num,i,j,0);
                 }else if((Mathf.Abs(i+j)==18)||(i==5 && j == -13)){
-                    Instantiate(sprites[num],new Vector3(i,j,0),Quaternion.Euler(0,0,180));
+                    Instantiate(sprites[num],new Vector3(i,j,0),Quaternion.Euler(0,0,180),transform);
                 }else if(Mathf.Abs(i+j)==9){
-                    Instantiate(sprites[num],new Vector3(i,j,0), Quaternion.Euler(0,0,90));
+                    Instantiate(sprites[num],new Vector3(i,j,0), Quaternion.Euler(0,0,90),transform);
                 }else{
-                    Instantiate(sprites[num],new Vector3(i,j,0),Quaternion.Euler(0,0,270));
+                    Instantiate(sprites[num],new Vector3(i,j,0),Quaternion.Euler(0,0,270),transform);
                 }
             }
         
 
             if(num == 2){
                 if(j==0 || j==-9 || j==-13){
-                Instantiate(sprites[num],new Vector3(i,j,0),Quaternion.Euler(0,0,90));
+                Instantiate(sprites[num],new Vector3(i,j,0),Quaternion.Euler(0,0,90),transform);
                  }else{
                 GenerateSprite(num,i,j,0);
             }
@@ -120,13 +121,13 @@ public class LevelGenerator : MonoBehaviour
                     if(i==2||i==7||i==10||i==16||i==22){
                      GenerateSprite(num,i,j,0);
                     }else if(i==5||i==11||i==17||i==20||i==25){
-                    Instantiate(sprites[num],new Vector3(i,j,0), Quaternion.Euler(0,0,-90));
+                    Instantiate(sprites[num],new Vector3(i,j,0), Quaternion.Euler(0,0,-90),transform);
                     }
                 }else if(j==-4||j==-7){
                     if(i==2||i==7||i==10||i==16||i==22){
-                     Instantiate(sprites[num],new Vector3(i,j,0),Quaternion.Euler(0,0,90));
+                     Instantiate(sprites[num],new Vector3(i,j,0),Quaternion.Euler(0,0,90),transform);
                     }else if(i==5||i==11||i==17||i==20||i==25){
-                    Instantiate(sprites[num],new Vector3(i,j,0), Quaternion.Euler(0,0,180));
+                    Instantiate(sprites[num],new Vector3(i,j,0), Quaternion.Euler(0,0,180),transform);
                     }
                 }
             }
@@ -136,7 +137,7 @@ public class LevelGenerator : MonoBehaviour
                     if((j==-2&&(i==13||i==14))||((j==-7)&&(i==7||i==8||i==19||i==20))||((j==-9||j==-10)&&(i==7||i==20||i==13||i==14))){
                         GenerateSprite(num,i,j,0);
                     }else{
-                    Instantiate(sprites[num], new Vector3(i,j,0),Quaternion.Euler(0,0,90));
+                    Instantiate(sprites[num], new Vector3(i,j,0),Quaternion.Euler(0,0,90),transform);
                     }
                 }else if(j== -12){
                         if((i==7||i==8||i==19||i==20)){
@@ -198,7 +199,7 @@ public class LevelGenerator : MonoBehaviour
 
             if(num == 2){
                 if(j==-15 || j==-19 || j==-28){
-                Instantiate(sprites[num],new Vector3(i,j,0),Quaternion.Euler(0,0,90));
+                Instantiate(sprites[num],new Vector3(i,j,0),Quaternion.Euler(0,0,90),transform);
                  }else{
                 GenerateSprite(num,i,j,0);
             }
@@ -209,13 +210,13 @@ public class LevelGenerator : MonoBehaviour
                     if(i==2||i==7||i==10||i==16||i==22){
                      GenerateSprite(num,i,j,90);
                     }else if(i==5||i==11||i==17||i==20||i==25){
-                    Instantiate(sprites[num],new Vector3(i,j,0), Quaternion.Euler(0,0,180));
+                    Instantiate(sprites[num],new Vector3(i,j,0), Quaternion.Euler(0,0,180),transform);
                     }
                 }else if(j==-24||j==-21){
                     if(i==2||i==7||i==10||i==16||i==22){
-                     Instantiate(sprites[num],new Vector3(i,j,0),Quaternion.Euler(0,0,0));
+                     Instantiate(sprites[num],new Vector3(i,j,0),Quaternion.Euler(0,0,0),transform);
                     }else if(i==5||i==11||i==17||i==20||i==25){
-                    Instantiate(sprites[num],new Vector3(i,j,0), Quaternion.Euler(0,0,-90));
+                    Instantiate(sprites[num],new Vector3(i,j,0), Quaternion.Euler(0,0,-90),transform);
                     }
                 }
                 if(j==-15){
@@ -232,7 +233,7 @@ public class LevelGenerator : MonoBehaviour
                     if((j==-26&&(i==13||i==14))||((j==-21)&&(i==7||i==8||i==19||i==20))||((j==-19||j==-18)&&(i==7||i==20||i==13||i==14))){
                         GenerateSprite(num,i,j,0);
                     }else{
-                    Instantiate(sprites[num], new Vector3(i,j,0),Quaternion.Euler(0,0,90));
+                    Instantiate(sprites[num], new Vector3(i,j,0),Quaternion.Euler(0,0,90),transform);
                     }
                 }else if(j== -16){
                         if((i==7||i==8||i==19||i==20)){
