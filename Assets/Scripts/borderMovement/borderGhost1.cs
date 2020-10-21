@@ -74,7 +74,7 @@ public class borderGhost1 : MonoBehaviour
 
          if(trans.position.y == 4.55f && swi ==4){
             if(Vector3.Distance(trans.position,start)>0.1f){
-                float t1 = (Time.time - t)/(dura/(17f/5f));
+                float t1 = (Time.time - t)/(dura/(17f/5.1f));
                 
                 trans.position = Vector3.Lerp(corner,start,t1);
             }else if(Vector3.Distance(trans.position, start)<=0.1f){
