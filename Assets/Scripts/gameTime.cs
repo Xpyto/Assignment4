@@ -23,25 +23,21 @@ public class gameTime : MonoBehaviour
     {
         t = Time.time - startTime;
         float temp;
-        temp = ((int)t/60f);
-        if(temp < 10f){
-            min = "0" + temp.ToString("f0");
-        }else{
-            min = temp.ToString("f0");
-        }
+        
+        temp = ((int)t/60);
+        min = temp.ToString("0#");
         
         temp = (t % 60);
-        if(temp < 10f){
-            sec = "0" + temp.ToString("f0");
-        }else{
-            sec = temp.ToString("f0");
+        if(temp > 59){
+            temp = 0;
+            min = "01";
         }
+        sec = temp.ToString("0#");
+        
+        
         temp = (((t * 1000f) % 1000)/10);
-        if(temp < 10f){
-            milSec = "0" + temp.ToString("f0");
-        }else{
-            milSec = temp.ToString("f0");
-        }
+        milSec = temp.ToString("0#");
+        
         
 
         gameT.text = min + ":" + sec + ":" + milSec;
